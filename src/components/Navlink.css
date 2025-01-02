@@ -1,0 +1,16 @@
+/* Navlink.css */
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .nav-link span {
+    margin-left: 8px;
+  }
+  

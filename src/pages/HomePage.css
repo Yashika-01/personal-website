@@ -1,0 +1,72 @@
+/* Original styles - unchanged */
+.homepage {
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+  justify-content: center;
+  align-items: center; /* Center align the content */
+  background-color: #b5a9a1;
+  color: #f9fafb;
+  min-height: 100vh;
+  position: relative;
+  text-align: center; /* Center the text */
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between the cards */
+  margin-top: 20px; /* Add margin above cards */
+  flex-wrap: nowrap; /* Ensure cards stay in one line */
+}
+
+
+
+/* Responsive adjustments - unchanged */
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-container, .info-cards-container {
+    max-width: 100%;
+  }
+}
+
+/* New bubble styles */
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  animation: float linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}

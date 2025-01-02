@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #483434;
+  border-bottom: 1px solid #374151;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Keep the navbar above other content */
+}
+
+/* On scroll, change the navbar's background and shadow */
+.navbar.scrolled {
+  background-color: #483434;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+/* Navbar links */
+.navbar-links {
+  display: none;
+  font-size: 1rem; /* Increased font size */
+  font-weight: 600; /* Increased font weight */
+  justify-content: space-between;
+}
+
+/* Link hover effect */
+.navbar-links a,
+.mobile-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover,
+.mobile-nav-link:hover {
+  color: #120d0d;
+  transform: translateX(5px);
+}
+
+/* Navbar menu icon */
+.navbar-menu-icon {
+  cursor: pointer;
+  color: #9ca3af;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu-icon:hover {
+  color: #3b82f6;
+  transform: rotate(180deg); /* Add rotation effect */
+}
+
+/* Mobile navigation styles */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(3, 9, 18, 0.95);
+  padding: 10px;
+  font-size: 1.2rem; /* Larger font size for mobile links */
+  font-weight: 600; /* Increased font weight for mobile */
+  transform: translateY(-100%); /* Hide initially */
+  transition: transform 0.3s ease;
+}
+
+/* Show mobile navigation on small screens */
+@media (max-width: 767px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}
+
+/* Show desktop navigation on larger screens */
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar-menu-icon {
+    display: none;
+  }
+}

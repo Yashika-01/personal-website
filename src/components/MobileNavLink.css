@@ -1,0 +1,17 @@
+/* MobileNavLink.css */
+.mobile-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .mobile-nav-link span {
+    margin-left: 8px;
+  }
+  

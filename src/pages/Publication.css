@@ -1,0 +1,94 @@
+/* Make the background color span the entire page */
+body, html {
+    margin: 0;
+    padding: 20;
+    height: 100%;
+    background-color: #b5a9a1;
+  }
+  
+  .publication-container {
+    padding: 20px;
+    padding-top: 80px; /* Adjust this based on your navbar's height */
+    text-align: center;
+    min-height: 100vh;
+    background-color: #b5a9a1;
+  }
+  
+  .publication-title {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    color: #374151;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .publication-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .publication-card {
+    background-color: #6b4f4f;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px; /* Adjust this for larger screen widths */
+    box-shadow: 10px 40px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: left;
+  }
+  
+  .publication-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 20px 50px 60px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  
+  .publication-card-title {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f3f4f6;
+    margin-bottom: 10px;
+  }
+  
+  .publication-authors {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #bbbec2;
+    margin-bottom: 10px;
+  }
+  
+  .publication-details {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f3f4f6;
+    margin-bottom: 15px;
+  }
+  
+  .publication-link {
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d1f1f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .publication-link:hover {
+    color: #1a1717;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .publication-card {
+      max-width: 100%;
+    }
+  }
+  
