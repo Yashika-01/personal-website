@@ -30,7 +30,7 @@ const Navbar = () => {
         <span className="navbar-logo">Portfolio</span>
         <div className="navbar-links">
           <Navlink
-            href="/"
+            href="#/"
             icon={<Home />}
             text="Home"
           />
@@ -76,7 +76,7 @@ const Navbar = () => {
           style={{ transform: isMenuOpen ? 'translateY(0)' : 'translateY(-100%)' }}
         >
           <MobileNavLink
-            href="#"
+            href="#/"
             icon={<FileText />}
             text="Resume"
           />
