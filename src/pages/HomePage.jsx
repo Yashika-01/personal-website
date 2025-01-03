@@ -32,7 +32,7 @@ const BubbleBackground = () => {
 
   useEffect(() => {
     const generateBubbles = () => {
-      const newBubbles = Array.from({ length: 15 }).map((_, i) => ({
+      const newBubbles = Array.from({ length: 45 }).map((_, i) => ({
         id: i,
         size: Math.random() * 60 + 20,
         duration: Math.random() * 10 + 8,
@@ -66,9 +66,9 @@ const HomePage = () => (
     </header>
     <ProfileSection />
     <div className="info-cards">
-      <InfoCard icon={<Code />} title="Projects" description="Explore my creative side through a collection of innovative projects that showcase my skills and passion." color="blue" />
+      <InfoCard icon={<Code />} title="Projects" description="Explore my creative side through collection of projects that showcase my skills and passion." color="blue" />
       <InfoCard icon={<Briefcase />} title="Experience" description="Dive into my professional journey, where I bring expertise, leadership, and problem-solving to every challenge." color="purple" />
-      <InfoCard icon={<GraduationCap />} title="Education" description="Learn about the academic milestones that have shaped my career, from foundational knowledge to specialized expertise." color="pink" />
+      <InfoCard icon={<GraduationCap />} title="Education" description="Learn about the academic milestones that have shaped my career, from foundation to specialization." color="pink" />
       <InfoCard icon={<BookOpen />} title="Publications" description="Discover my contributions to the field through research, articles, and publications that share knowledge and inspire." color="cyan" />
     </div>
   </div>

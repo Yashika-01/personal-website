@@ -9,6 +9,7 @@
   min-height: 100vh;
   position: relative;
   text-align: center; /* Center the text */
+  padding-top: 80px;
 }
 
 .info-cards {
@@ -70,3 +71,143 @@
     opacity: 0;
   }
 }
+
+
+/* 1. Extra Small Devices (e.g., Phones in Portrait Mode, < 480px) */
+@media (max-width: 480px) {
+  .homepage {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .info-cards {
+    flex-wrap: wrap; /* Stack cards vertically */
+    gap: 10px; /* Reduce spacing between cards */
+    margin-top: 15px;
+  }
+
+  .bubble {
+    width: 30px;
+    height: 30px;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(0.8); /* Smaller bubbles */
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-40vh) scale(1); /* Shorter float distance */
+      opacity: 0.3;
+    }
+    100% {
+      transform: translateY(-80vh) scale(0.8);
+      opacity: 0;
+    }
+  }
+}
+
+/* 2. Small Devices (e.g., Phones in Landscape Mode, Tablets in Portrait Mode, 480px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .homepage {
+    padding: 80px;
+    text-align: center;
+  }
+
+  .info-cards {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .bubble {
+    width: 50px;
+    height: 50px;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-50vh) scale(1.1);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(-90vh) scale(1);
+      opacity: 0;
+    }
+  }
+}
+
+/* 3. Medium Devices (e.g., Tablets in Landscape Mode, Laptops, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .homepage {
+    padding: 80px;
+    text-align: center;
+  }
+
+  .info-cards {
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-top: 105px;
+    font-size: 1rem;
+  }
+
+  .bubble {
+    width: 70px;
+    height: 70px;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-60vh) scale(1.2);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(-100vh) scale(1.1);
+      opacity: 0;
+    }
+  }
+}
+
+/* 4. Large Devices (e.g., Desktops, 1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .homepage {
+    padding: 160px;
+    text-align: center;
+  }
+
+  .info-cards {
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .bubble {
+    width: 90px;
+    height: 90px;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1.1);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-70vh) scale(1.3);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-110vh) scale(1.2);
+      opacity: 0;
+    }
+  }
+}
+
+

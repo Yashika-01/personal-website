@@ -24,6 +24,10 @@ const Navbar = () => {
     };
   }, []);
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
@@ -73,12 +77,23 @@ const Navbar = () => {
       {isMenuOpen && (
         <div
           className="mobile-nav"
-          style={{ transform: isMenuOpen ? 'translateY(0)' : 'translateY(-100%)' }}
+          style={{
+            transform: isMenuOpen ? 'translateY(0)' : 'translateY(-100%)',
+          }}
         >
           <MobileNavLink
             href="#/"
+            icon={<Home />}
+            text="Home"
+            onClick={closeMenu} // Close the menu when clicking "Home"
+          />
+          <MobileNavLink
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
             icon={<FileText />}
+            target="_blank"
+            rel="noopener noreferrer"
             text="Resume"
+            onClick={closeMenu}
           />
           <MobileNavLink
             href="https://github.com/Yashika-01"
@@ -86,6 +101,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             icon={<Github />}
             text="GitHub"
+            onClick={closeMenu}
           />
           <MobileNavLink
             href="https://www.linkedin.com/in/yashika-kuckian-687152214/"
@@ -93,6 +109,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             icon={<Linkedin />}
             text="LinkedIn"
+            onClick={closeMenu}
           />
           <MobileNavLink
             href="mailto:yashikakuckian2001@gmail.com"
@@ -100,6 +117,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             icon={<Mail />}
             text="Email"
+            onClick={closeMenu}
           />
         </div>
       )}

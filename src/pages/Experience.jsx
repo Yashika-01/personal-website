@@ -21,7 +21,7 @@ const BubbleBackground = () => {
 
   useEffect(() => {
     const generateBubbles = () => {
-      const newBubbles = Array.from({ length: 15 }).map((_, i) => ({
+      const newBubbles = Array.from({ length: 45 }).map((_, i) => ({
         id: i,
         size: Math.random() * 60 + 20,
         duration: Math.random() * 10 + 8,

@@ -85,10 +85,134 @@ body, html {
     color: #1a1717;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .publication-card {
-      max-width: 100%;
-    }
+  /* 1. Extra Small Devices (e.g., Phones in Portrait Mode, < 480px) */
+@media (max-width: 480px) {
+  body, html {
+    padding: 10px;
   }
-  
+
+  .publication-container {
+    padding: 10px;
+    padding-top: 60px; /* Adjusted for smaller navbar heights */
+  }
+
+  .publication-title {
+    font-size: 1.5rem;
+  }
+
+  .publication-grid {
+    gap: 15px;
+  }
+
+  .publication-card {
+    padding: 15px;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .publication-card-title {
+    font-size: 1.2rem;
+  }
+
+  .publication-authors,
+  .publication-details {
+    font-size: 0.8rem;
+  }
+
+  .publication-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* 2. Small Devices (e.g., Phones in Landscape Mode, Tablets in Portrait Mode, 480px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .publication-container {
+    padding: 15px;
+    padding-top: 70px;
+  }
+
+  .publication-title {
+    font-size: 1.8rem;
+  }
+
+  .publication-card {
+    max-width: 90%;
+    padding: 18px;
+    box-shadow: 8px 30px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .publication-card-title {
+    font-size: 1.3rem;
+  }
+
+  .publication-authors,
+  .publication-details {
+    font-size: 0.9rem;
+  }
+
+  .publication-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* 3. Medium Devices (e.g., Tablets in Landscape Mode, Laptops, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .publication-container {
+    padding: 20px;
+    padding-top: 80px;
+  }
+
+  .publication-title {
+    font-size: 2rem;
+  }
+
+  .publication-card {
+    max-width: 80%;
+    padding: 20px;
+    box-shadow: 10px 40px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .publication-card-title {
+    font-size: 1.4rem;
+  }
+
+  .publication-authors,
+  .publication-details {
+    font-size: 1rem;
+  }
+
+  .publication-link {
+    font-size: 1rem;
+  }
+}
+
+/* 4. Large Devices (e.g., Desktops, 1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .publication-container {
+    padding: 30px;
+    padding-top: 100px;
+  }
+
+  .publication-title {
+    font-size: 2.5rem;
+  }
+
+  .publication-card {
+    max-width: 70%;
+    padding: 25px;
+    box-shadow: 15px 50px 50px rgba(0, 0, 0, 0.25);
+  }
+
+  .publication-card-title {
+    font-size: 1.6rem;
+  }
+
+  .publication-authors,
+  .publication-details {
+    font-size: 1.1rem;
+  }
+
+  .publication-link {
+    font-size: 1.1rem;
+  }
+}
+
