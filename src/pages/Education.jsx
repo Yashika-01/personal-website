@@ -95,7 +95,7 @@ const TimelineEducation = () => {
       duration: 'Aug 2019 - May 2023',
       description: 'Organized and led workshops and webinars to enhance students technical skills and knowledge at CSI FCRIT-IT from August 2021 to July 2022.',
       skills: ['Artificial Intelligence', 'Data Science', 'Algorithms and Data Structures', 'Operating Systems', 'Computer Network and Security', 'Database and Management Systems', 'Parallel Computing', 'Compilers', 'DevOps', 'Advanced DevOps - AWS'],
-      link: 'https://www.xyzuniversity.edu/',
+      link: 'https://mu.ac.in/',
       isMaster: true, // Bachelor's degree
     },
   ];
