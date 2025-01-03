@@ -33,19 +33,24 @@
   }
 
 
-.project-card {
+  .project-card {
     background-color: #6B4F4F;
     border-radius: 1.25rem;
-    padding: 2rem;
+    padding: 1.5rem 2rem; /* Adjusted padding for a shorter height */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation-duration: 0.5s;
-  }
-  
-  .project-card:hover {
+    width: 100%; /* Ensure cards fill the grid space */
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Allow the height to adjust based on content */
+    aspect-ratio: 16 / 9; /* Optional: Keep a consistent width-to-height ratio */
+}
+
+.project-card:hover {
     transform: translateY(-12px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  }
+}
+
   
   .project-card-header {
     display: flex;

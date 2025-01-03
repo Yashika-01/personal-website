@@ -51,59 +51,41 @@ const BubbleBackground = () => {
   const ProjectsPage = () => {
     const projects = [
       {
-        title: "E-Commerce Platform",
-        skills: ["React", "Node.js", "MongoDB", "Express"],
-        githubLink: "https://github.com/username/project",
-        description: "A full-stack e-commerce platform with features including user authentication, product management, shopping cart, and payment integration using Stripe."
+        title: "ATM Security System using Gesture and Hand Vein Recognition",
+        skills: ["Python", "Raspberry Pi", "Gesture Recognition", "Image Processing"],
+        githubLink: "https://github.com/Yashika-01/ATMSECURITY", 
+        description: "An advanced security system for ATMs integrating gesture-based PIN entry and hand vein recognition for secure and accessible user authentication. The project leverages Python for system logic, Raspberry Pi for hardware integration, and image processing for vein recognition."
+      },      
+      {
+        title: "Social Polls Analysis Platform",
+        skills: ["Python", "Data Analysis", "Machine Learning", "Web Development"],
+        githubLink: "https://socialpolls.org/", 
+        description: "A research platform developed by the SIMS Lab at UMass Amherst, dedicated to analyzing informal polls published on social media platforms like X (formerly Twitter). The platform examines biases in social media polls, their accuracy compared to traditional polling methods, and their potential influence on public discourse, particularly in the context of U.S. presidential elections."
+      },      
+      {
+        title: "Personal Portfolio Website",
+        skills: ["HTML", "CSS", "JavaScript", "React", "Web Design"],
+        githubLink: "https://github.com/Yashika-01/personal-website", // Replace with the actual GitHub repository link
+        description: "A personal portfolio website showcasing professional projects, skills, and achievements. Designed to provide visitors with an intuitive and aesthetically pleasing user experience, it features responsive design, dynamic content, and seamless navigation to highlight expertise in software development and technology."
+      },      
+      {
+        title: "Code Summarization and Evaluation System",
+        skills: ["Python", "Node.js", "MongoDB", "Hugging Face", "Machine Learning", "React"],
+        githubLink: "https://github.com/AKSHATA-22/520",
+        description: "A sophisticated system designed to generate and evaluate natural language summaries of source code. This tool supports user authentication, multi-role login, and administrative user management. It integrates advanced machine learning models from Hugging Face for accurate code summarization and features an interactive evaluation system with graphical feedback for summaries rated on naturalness, usefulness, and consistency. Includes a full-stack implementation with a React frontend, Node.js backend, and Python API for summarization."
       },
       {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
+        title: "GTReZ - Gujarati Text Recognition",
+        skills: ["Python", "Deep Learning", "YOLOv5", "Django", "AWS"],
+        githubLink: "https://yashika-01.github.io/TIFRwebsite/",
+        description: "GTReZ focuses on digitizing and recognizing Gujarati text from manuscripts using advanced techniques like zone segmentation and deep learning models. The system achieves high accuracy and efficiency in recognizing complex scripts and modifiers unique to the Gujarati language, with potential future enhancements including support for handwritten scripts and other fonts."
+      },      
       {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
-      {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
-      {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
-      {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
-      {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
-      {
-        title: "AI Image Generator",
-        skills: ["Python", "TensorFlow", "Flask", "AWS"],
-        githubLink: "https://github.com/username/project2",
-        description: "An AI-powered image generation tool that creates unique artwork using deep learning models. Includes features for style transfer and image manipulation."
-      },
-      {
-        title: "Task Management System",
-        skills: ["Vue.js", "Firebase", "Tailwind CSS"],
-        githubLink: "https://github.com/username/project3",
-        description: "A collaborative task management system with real-time updates, drag-and-drop functionality, and team collaboration features."
-      }
+        "title": "Missing Person Tracker",
+        "skills": ["Python", "OpenCV", "TensorFlow", "Flask", "AWS"],
+        "githubLink": "https://github.com/CYBE-SPH2021/Missing-Person-Tracker/",
+        "description": "A system designed to track and identify missing persons through facial recognition and real-time video analysis using deep learning models and computer vision techniques."
+    }
     ];
 
     return (
